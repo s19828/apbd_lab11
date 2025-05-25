@@ -17,11 +17,11 @@ namespace LAB_11.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> getPatientById(int id)
+        public async Task<IActionResult> GetPatientById(int id)
         {
             try
             {
-                var result = await _dbService.getPatientById(id);
+                var result = await _dbService.GetPatientById(id);
                 return Ok(result);
             }
             catch (Exception e)

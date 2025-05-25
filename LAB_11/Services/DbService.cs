@@ -61,7 +61,7 @@ public class DbService : IDbService
         return newPrescription.IdPrescription;
     }
 
-    public async Task<PatientPrescriptionDTO> getPatientById(int id)
+    public async Task<PatientPrescriptionDTO> GetPatientById(int id)
     {
         if (await _context.Patients.FindAsync(id) == null)
         {
